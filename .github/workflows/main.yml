@@ -1,0 +1,12 @@
+name: My DevOps Workflow
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run a simple script
+        run: echo "GitHub Actions working successfully for my Mid Paper!"
